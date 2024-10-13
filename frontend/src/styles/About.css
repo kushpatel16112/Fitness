@@ -1,0 +1,192 @@
+.about-co-img {
+    background-color: rgb(154, 154, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    position: relative;
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.about-cor {
+    text-align: center;
+    color: white;
+}
+
+.about-co-content,
+.about-cor-content {
+    margin: 0;
+}
+
+.about-co-content {
+    text-transform: capitalize;
+    font-weight: bold;
+    color: black;
+    font-size: 38px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.about-cor-content {
+    margin-top: 1rem;
+    color: rgb(28, 27, 27);
+    font-size: 23px;
+}
+
+.container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 48px 0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.card {
+    background-color: white;
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.card-image {
+    height: 96px;
+    width: 200px;
+}
+
+.card-image-1 {
+    height: 96px;
+    width: 96px;
+}
+
+.card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    color: #4b5563;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.link {
+    color: #f97316;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.card-button {
+    background-color: #f97316;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.program-button {
+    background-color: #f97316;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 9999px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.card-button:hover {
+    background-color: #ea580c;
+}
+
+/* FAQ Section Styles */
+.faq-section {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.7rem;
+    color: #555;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: #007bff;
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-answer.open {
+    max-height: 200px;
+}
+
+.faq-answer p {
+    font-size: 1.7rem;
+    color: #666;
+    margin: 10px 0 0;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}

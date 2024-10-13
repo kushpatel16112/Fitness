@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+   --main-color: red;
+   --light-color: gray;
+   --light-bg: rgb(232, 236, 236);
+   --white: white;
+   --black:black;
+   --border:.1rem solid var(--light-color);
+   --box-shodow:0 .5rem 1rem rgb(82, 82, 82);
+}
+
+*{
+   font-family: 'Montserrat' , sans-serif;
+   margin: 0; 
+   padding: 0;
+   box-sizing: border-box;
+   outline: none; 
+   border: none;
+   text-decoration: none;
+}
+
+*::selection{
+   background-color: var(--main-color);
+   color: var(--white);
+}
+
+*::-webkit-scrollbar{
+   height: .5rem;
+   width: 1rem;
+}
+
+*::-webkit-scrollbar-track{
+   background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+   background-color: var(--main-color);
+   border-radius: 5rem;
+}
+
+html{
+   font-size: 62%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+   scroll-padding-top: 10rem;
+}
+
+body{
+   background-color: var(--light-bg);
+   overflow-x: hidden;
+}
+
+section{
+    padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1500px;
+    margin-left: 1rem;
+    margin-right: 2rem;
+}
+
+/* Header part css start */
+.header {
+    position: sticky;
+    top: 0;
+    left: 0; 
+    right: 0;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+}
+
+/* Navbar with Black Background */
+.header .navbar {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--black); /* Set navbar background color to black */
+}
+
+/* Flex container for aligning elements */
+.header .navbar .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* Logo styling */
+.header .logo {
+    font-size: 2.2rem;
+    color: var(--white); /* Logo text is white for contrast */
+}
+
+.header .logo i {
+    color: var(--main-color); /* Keep the logo icon in main color (as needed) */
+    margin-right: 1rem;
+}
+
+/* Property law section styling */
+.header .su {
+    display: flex;
+}
+
+.header .su li a {
+    font-size: 2.2rem;
+    color: var(--white); /* Make the text white for visibility on black background */
+    padding: 1rem 2rem;
+}
+
+.header .su li a:hover {
+    background-color: var(--main-color); /* Highlight with main color on hover */
+    color: var(--white);
+}
+
+/* Main menu section */
+.header .menu {
+    position: relative;
+}
+
+/* Main menu items */
+.header .menu ul {
+    list-style: none;
+    display: flex;
+}
+
+.header .menu ul li {
+    position: relative;
+    margin-left: 2rem;
+}
+
+.header .menu ul li a {
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    color: var(--white); /* Set menu items to white */
+    background-color: var(--black); /* Background color matches the navbar */
+}
+
+.header .menu ul li a:hover {
+    background-color: var(--main-color); /* Change background on hover */
+    color: var(--white); /* Keep text white on hover */
+}
+
+
+/* Account section */
+.header ul {
+    display: flex;
+}
+
+.header ul li {
+    position: relative;
+    margin-left: 2rem;
+    list-style: none;
+}
+
+.header ul li a {
+    font-size: 1.6rem;
+    padding: 1.2rem;
+    color: var(--white); /* Set account section items to white */
+}
+
+/* Dropdown for account and saved sections */
+.header ul li:hover ul {
+    display: block;
+}
+
+.header ul li ul {
+    display: none;
+    position: absolute;
+    background-color: var(--black); /* Set dropdown background to black */
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* Dropdown links */
+.header ul li ul li a {
+    padding: 1rem;
+    color: var(--white); /* Set dropdown text to white */
+}
+
+.header ul li ul li a:hover {
+    background-color: var(--main-color); /* Hover effect for account dropdown */
+    color: var(--white);
+}
+/* Header part css ends */
+
+
+
+#menu-btn{
+   font-size: 2.5rem;
+   color: var(--black);
+   display: none;
+}

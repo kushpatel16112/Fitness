@@ -1,0 +1,208 @@
+.program-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.program-container h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.program-list {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 20px;
+}
+
+.program-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    height: 500px;
+}
+
+.program-image {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* For even cards: Image on left, text on right */
+.left-image {
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    background-color: rgb(230, 229, 229);
+}
+
+.right-image {
+    flex-direction: row-reverse;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    background-color: rgb(198, 198, 198);
+}
+
+.program-info {
+    padding-left: 20px;
+    width: 60%;
+    position: relative; /* Make relative to position button */
+}
+
+.program-info .program-title{
+    margin-top: -150px;
+    font-size: 40px;
+}
+
+.program-info .program-de{
+    font-size: 20px;
+}
+
+/* Enroll button */
+.enroll-btn {
+    position: absolute;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Enroll button for left-image: right-aligned */
+.left-image .enroll-btn {
+    bottom: -150px;
+    right: 20px;
+}
+
+/* Enroll button for right-image: left-aligned */
+.right-image .enroll-btn {
+    bottom: -150px;
+    left: 20px;
+}
+
+.program-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.program-info p {
+    margin: 10px 0;
+}
+
+.program-info strong {
+    color: #007bff;
+}
+
+
+/* Arrow button (>) */
+.program-card .arrow-btn {
+    right: 20px;
+    bottom: 20px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Modal styles */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 60%;
+    max-width: 800px;
+    position: relative;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-image {
+    width: 40%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.modal-info {
+    width: 60%;
+}
+
+.modal-info h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.modal-info p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Modal animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .program-card {
+        flex-direction: column; /* Stack vertically on smaller screens */
+        align-items: flex-start;
+        height: auto; /* Remove fixed height */
+    }
+
+    .program-image {
+        width: 100%;
+        height: 200px; /* Adjust height for mobile view */
+    }
+
+    .program-info {
+        padding-left: 0;
+        width: 100%;
+        margin-top: 20px;
+        position: static; /* Remove absolute positioning on mobile */
+    }
+
+    .enroll-btn {
+        position: relative; /* Make button inline on mobile */
+        margin-top: 20px; /* Add some margin on top */
+    }
+}

@@ -1,0 +1,76 @@
+/* This is footer department */
+body{
+    background-color: var(--light-bg);
+    overflow-x: hidden;
+}
+
+.footer{
+    background-image: url("../images/Lo_Bac_2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;  /* Ensures the entire image fits inside the div */
+    background-position: center; /* Centers the image within the div */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    width: auto; /* Optional: Ensure the div takes full width */
+    height: auto;
+ }
+ 
+ .footer .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: space-between;
+ }
+ 
+ .footer .flex .box{
+    flex: 1 1 30rem;
+ }
+ 
+ .footer .flex .box a{
+    display: block;
+    padding: 1rem 0;
+    font-size: 1.8rem;
+ }
+ 
+ .footer .flex .box a span{
+    color: var(--white);
+ }
+ 
+ .footer .flex .box a:hover span{
+    text-decoration: underline;
+ }
+ 
+ .footer .flex .box a i{
+    color: var(--main-color);
+ }
+ 
+ .footer .flex .box:last-child{
+    text-align: right;
+ }
+ 
+ .footer .flex .box:last-child a i{
+    margin-left: 1.5rem;
+ }
+ 
+ .footer .flex .box:first-child a i{
+    margin-right: 1.5rem;
+ }
+ 
+ .footer .flex .box:nth-child(2){
+    text-align: center;
+ }
+ 
+ .footer .credit{
+    padding: 3rem 2rem;
+    text-align: center;
+    border-top: var(--border);
+    font-size: 3rem;
+    color: var(--white);
+    margin-top: 2rem;
+ }
+ 
+ .footer .credit span{
+    color: var(--main-color);
+ }
+ 
+ /* Footer department ending */
+ 

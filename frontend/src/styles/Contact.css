@@ -1,0 +1,236 @@
+.co-img {
+  background-image: url("../images/Co_img_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  height: 300px;
+  width: auto;
+  margin: 1rem;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+  box-shadow: 0 0 20px var(--black);
+}
+
+.co-img {
+  background-image: url("../images/Co_img_1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  position: relative;
+  width: 100%;
+}
+
+.cor {
+  text-align: center;
+  color: white;
+}
+
+.co-content,
+.cor-content {
+  margin: 0;
+}
+
+.co-img .cor .co-content {
+  color: red;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.co-img .cor .cor-content {
+  color: white;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.cor {
+  justify-content: center;
+}
+
+.co-contant {
+  justify-content: center;
+}
+
+.contact__header {
+  margin-left: 15rem;
+}
+
+.contactForm__header {
+  background-color: #858585;
+  padding: 20px;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.get {
+  margin: 1rem 2rem;
+  margin-left: 25rem;
+}
+
+.contactForm__main {
+  justify-content: center;
+  padding: 20px;
+}
+
+.contactForm__container {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+
+.contactForm__formContainer {
+  width: 40%;
+  margin-right: 2rem;
+}
+
+.contactForm__mapContainer {
+  justify-content: center;
+  width: 40%;
+}
+
+.contactForm__formGroup {
+  margin-bottom: 10px;
+}
+
+.contactForm__formGroup input,
+.contactForm__formGroup select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm__formGroup textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contactForm__button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+}
+
+.contactForm__button:hover {
+  background-color: red;
+}
+
+.contactForm__contactInfo {
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.contactForm__socialMedia {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.contactForm__socialMedia a {
+  color: #333;
+  font-size: 24px;
+}
+
+.contactForm__socialMedia a:hover {
+  color: #007bff;
+}
+
+.about_why {
+  justify-content: center;
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+  margin-left: 65rem;
+}
+
+.about_why a {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.fitness-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  margin-left: 10rem;
+}
+
+.fitness-image-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.fitness-image {
+  width: 100%;
+  height: auto;
+}
+
+.fitness-content {
+  width: 100%;
+  max-width: 800px;
+  padding: 32px;
+}
+
+.fitness-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.fitness-icon i {
+  font-size: 100px;
+  margin-right: 16px;
+}
+
+.fitness-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.fitness-description {
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 16px;
+}
+
+.fitness-button a{
+  font-family: 'Arial', sans-serif;
+  background-color: #f97316;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .fitness-container {
+    flex-direction: row;
+  }
+
+  .fitness-content {
+    padding: 32px;
+  }
+}
