@@ -66,7 +66,7 @@ Welcome to **Level Up Your Fitness**, your go-to fitness app to enhance your hea
 
 #### Other Tool
 
--**React Router**: For navigation between pages such as Home, Programs, Challenges, and Dashboard, we used React Router to create a single-page application (SPA) experience, ensuring smooth transitions without page reloads.
+- **React Router**: For navigation between pages such as Home, Programs, Challenges, and Dashboard, we used React Router to create a single-page application (SPA) experience, ensuring smooth transitions without page reloads.
 - **Git**: Version control is managed using Git, allowing us to track changes and collaborate easily.
 
 ## Usage
@@ -77,7 +77,29 @@ Welcome to **Level Up Your Fitness**, your go-to fitness app to enhance your hea
 4. **Contact Support**: Need help? Reach out via the contact form, available to logged-in users.
 5. **FAQ**: Visit the FAQ section to get detailed information on a variety of fitness-related questions. Topics include fitness advice, nutrition, workout plans, and app features.
 
+## Screenshots
 
+### Home
+<p align="center">
+  <img src="https://github.com/kushpatel16112/Fitness/blob/main/frontend/src/images/Fitness_SS1.png" style="width: 1200px; border: 2px solid black; margin-bottom: 20px;"/>
+</p>
+
+### Login & SignUp
+<p align="center">
+  <!-- Two smaller images side by side -->
+  <img src="https://github.com/kushpatel16112/Fitness/blob/main/frontend/src/images/Fitness_SS2.png" style="width: 600px; margin-right: 10px; border-radius: 8px;"/>
+  <img src="https://github.com/kushpatel16112/Fitness/blob/main/frontend/src/images/Fitness_SS3.png" style="width: 600px; margin-left: 10px; border-radius: 8px;"/>
+</p>
+
+### Programs
+<p align="center">
+  <img src="https://github.com/kushpatel16112/Fitness/blob/main/frontend/src/images/Fitness_SS4.png" style="width: 1200px; border: 2px solid black; margin-bottom: 20px;"/>
+</p>
+
+### Challenges
+<p align="center">
+  <img src="https://github.com/kushpatel16112/Fitness/blob/main/frontend/src/images/Fitness_SS5.png" style="width: 1200px; border: 2px solid black; margin-bottom: 20px;"/>
+</p>
 
 ## Contributing
 
